@@ -1,0 +1,23 @@
+[
+  {
+    "numero": "01",
+    "titulo": "Tribuna Popular",
+    "descripcion": "Vivila de pie y a pura pasión, con vista abierta a la recta principal.",
+    "precio": "Desde $180.000",
+    "cta": "Elegir tribuna"
+  },
+  {
+    "numero": "02",
+    "titulo": "Platea Curva",
+    "descripcion": "Asiento numerado frente a una de las curvas más disputadas del trazado.",
+    "precio": "Desde $420.000",
+    "cta": "Reservar platea"
+  },
+  {
+    "numero": "03",
+    "titulo": "Paddock Club",
+    "descripcion": "Hospitalidad premium con vista a boxes, gastronomía y acceso exclusivo.",
+    "precio": "Desde $1.250.000",
+    "cta": "Quiero el paddock"
+  }
+]
