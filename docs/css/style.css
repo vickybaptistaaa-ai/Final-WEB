@@ -1,0 +1,448 @@
+/* ==========================================================
+   GÁLVEZ GP · Hoja de estilos
+   Tipografías: Barlow Condensed (títulos) + DM Sans (texto)
+   ========================================================== */
+
+/* Google Fonts vía @import (debe ir primero en el archivo) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=DM+Sans:wght@400;700&display=swap');
+
+/* ---------- Variables ---------- */
+:root {
+  --negro: #0b0b0d;
+  --carbon: #141418;
+  --linea: #2a2a31;
+  --gris: #a1a1ab;
+  --blanco: #f5f2ec;
+  --rojo: #e10600;
+  --celeste: #74acdf;
+  --fuente-titulo: 'Barlow Condensed', sans-serif;
+  --fuente-texto: 'DM Sans', sans-serif;
+}
+
+/* ---------- Base ---------- */
+body {
+  background-color: var(--negro);
+  color: var(--blanco);
+  font-family: var(--fuente-texto);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-family: var(--fuente-titulo);
+  font-weight: 800;
+  color: var(--blanco);
+  text-transform: uppercase;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+/* ---------- Sobrescritura de clases de Bootstrap ---------- */
+.navbar {
+  background-color: var(--negro);
+  border-bottom: 1px solid var(--linea);
+}
+
+.navbar-brand {
+  color: var(--blanco);
+}
+
+.navbar-brand:hover {
+  color: var(--blanco);
+}
+
+.navbar-nav .nav-link {
+  color: var(--gris);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--rojo);
+}
+
+.btn {
+  border-radius: 8px;
+  font-family: var(--fuente-texto);
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-sm {
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+}
+
+.modal-content {
+  background-color: var(--blanco);
+  color: var(--negro);
+  border: 0;
+  border-top: 8px solid var(--rojo);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+  border-bottom: 2px dashed #c9c4b8;
+}
+
+.modal-title {
+  color: var(--negro);
+  font-size: 1.8rem;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #b9b4a7;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* ---------- Botones propios ---------- */
+.btn-rojo {
+  background-color: var(--rojo);
+  color: #ffffff;
+  border: 2px solid var(--rojo);
+}
+
+.btn-rojo:hover {
+  background-color: transparent;
+  color: var(--rojo);
+  border: 2px solid var(--rojo);
+}
+
+.btn-borde {
+  background-color: transparent;
+  color: var(--blanco);
+  border: 2px solid var(--blanco);
+}
+
+.btn-borde:hover {
+  background-color: var(--blanco);
+  color: var(--negro);
+  border: 2px solid var(--blanco);
+}
+
+.btn-borde-oscuro {
+  background-color: transparent;
+  color: var(--negro);
+  border: 2px solid var(--negro);
+}
+
+.btn-borde-oscuro:hover {
+  background-color: var(--negro);
+  color: var(--blanco);
+  border: 2px solid var(--negro);
+}
+
+.btn-negro {
+  background-color: var(--negro);
+  color: var(--blanco);
+  border: 2px solid var(--negro);
+}
+
+.btn-negro:hover {
+  background-color: transparent;
+  color: var(--negro);
+  border: 2px solid var(--negro);
+}
+
+/* ---------- Marca ---------- */
+.marca-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: var(--rojo);
+  color: #ffffff;
+  border-radius: 6px;
+  font-family: var(--fuente-titulo);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.marca-texto {
+  font-family: var(--fuente-titulo);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+/* ---------- Header / Hero ---------- */
+.hero {
+  background-image: linear-gradient(to bottom right, var(--negro) 55%, #3a0907 100%);
+  border-bottom: 4px solid var(--rojo);
+}
+
+.etiqueta-hero {
+  color: var(--celeste);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.punto {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--rojo);
+  border-radius: 50%;
+}
+
+.titulo-hero {
+  font-family: var(--fuente-titulo);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.resaltado {
+  color: var(--rojo);
+}
+
+.texto-hero {
+  color: #cfcfd6;
+  font-size: 1.15rem;
+}
+
+.pie-hero {
+  color: var(--gris);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.linea {
+  display: inline-block;
+  width: 4rem;
+  height: 1px;
+  background-color: var(--celeste);
+}
+
+/* ---------- Secciones ---------- */
+.etiqueta-seccion {
+  color: var(--celeste);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.titulo-seccion {
+  font-size: 3rem;
+}
+
+.texto-seccion {
+  color: var(--gris);
+  font-size: 1rem;
+}
+
+/* ---------- Tarjetas de entradas ---------- */
+.tarjeta-entrada {
+  --bs-border-color: var(--linea);
+  background-color: var(--carbon);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tarjeta-entrada:hover {
+  --bs-border-color: var(--rojo);
+  background-color: #1c1c22;
+  box-shadow: 0 8px 20px rgba(225, 6, 0, 0.25);
+}
+
+.tarjeta-numero {
+  color: var(--celeste);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.tarjeta-titulo {
+  font-size: 2.2rem;
+}
+
+.tarjeta-texto {
+  color: var(--gris);
+  font-size: 0.95rem;
+}
+
+.tarjeta-precio {
+  font-family: var(--fuente-titulo);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.enlace-card {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--rojo);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.enlace-card:hover {
+  color: var(--blanco);
+}
+
+/* ---------- Agenda ---------- */
+.fila-agenda {
+  --bs-border-color: var(--linea);
+  transition: all 0.3s ease;
+}
+
+.fila-agenda:hover {
+  --bs-border-color: var(--rojo);
+  background-color: var(--carbon);
+}
+
+.hora {
+  color: var(--celeste);
+  font-family: var(--fuente-titulo);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.agenda-titulo {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.agenda-detalle {
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+.pildora {
+  --bs-border-color: #55555f;
+  display: inline-block;
+  color: var(--blanco);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  text-transform: uppercase;
+}
+
+.pildora-roja {
+  --bs-border-color: var(--rojo);
+  background-color: var(--rojo);
+  color: #ffffff;
+}
+
+/* ---------- El circuito ---------- */
+.figura-circuito img {
+  width: 100%;
+  border: 2px solid var(--linea);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.figura-circuito img:hover {
+  border: 2px solid var(--rojo);
+  box-shadow: 0 8px 20px rgba(225, 6, 0, 0.25);
+}
+
+.figure-caption {
+  color: var(--celeste);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dato {
+  --bs-border-color: var(--linea);
+}
+
+.marcador {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-top: 0.35rem;
+  background-color: var(--rojo);
+  border-radius: 2px;
+}
+
+.dato-titulo {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.dato-detalle {
+  color: var(--gris);
+  font-size: 0.85rem;
+}
+
+/* ---------- Banner de venta ---------- */
+.banner-entradas {
+  background-color: var(--rojo);
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.etiqueta-banner {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.titulo-banner {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.texto-banner {
+  font-size: 1.05rem;
+}
+
+.precio-banner {
+  font-size: 1.1rem;
+}
+
+.precio-banner strong {
+  font-family: var(--fuente-titulo);
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.aclaracion-banner {
+  font-size: 0.75rem;
+}
+
+/* ---------- Footer ---------- */
+.pie {
+  background-color: var(--negro);
+  border-top: 1px solid var(--linea);
+}
+
+.pie-lema {
+  color: var(--gris);
+  font-size: 0.85rem;
+}
+
+.pie-enlace {
+  color: var(--blanco);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pie-enlace:hover {
+  color: var(--rojo);
+}
+
+.pie-aviso {
+  color: #6f6f7a;
+  font-size: 0.75rem;
+}
